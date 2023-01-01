@@ -1,6 +1,9 @@
+import 'dart:convert';
+
+import 'package:ecom_codecaneyon/dropDown/dropDownPage.dart';
 import 'package:ecom_codecaneyon/splash_screen.dart';
 import 'package:flutter/material.dart';
-
+import 'package:http/http.dart' as http;
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
      
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen(),
+      home: DropDownPage(),
     );
   }
 }
